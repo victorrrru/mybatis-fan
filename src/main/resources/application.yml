@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    jdbcUrl: jdbc:mysql://192.168.0.181:3306/smart_school
+    username: root
+    password: 123456
+    driverClassName: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath*:cn/interheart/rain/domain/second/**/**/sql/*Mapper.xml

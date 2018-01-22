@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.interheart.rain.domain.second.mapper.StudentMapper">
+  <resultMap id="BaseResultMap" type="cn.interheart.rain.domain.second.entity.Student">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="number" jdbcType="VARCHAR" property="number" />
+    <result column="password" jdbcType="CHAR" property="password" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="school_class_id" jdbcType="INTEGER" property="schoolClassId" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="id_number" jdbcType="VARCHAR" property="idNumber" />
+    <result column="telephone" jdbcType="VARCHAR" property="telephone" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="nation" jdbcType="VARCHAR" property="nation" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="height" jdbcType="SMALLINT" property="height" />
+    <result column="weight" jdbcType="DECIMAL" property="weight" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, number, password, logo, name, school_class_id, birthday, sex, id_number, telephone,
+    email, nation, address, height, weight, gmt_create, gmt_modified
+  </sql>
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from student1
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+</mapper>
