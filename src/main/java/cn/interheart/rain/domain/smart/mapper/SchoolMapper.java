@@ -1,4 +1,4 @@
-package cn.interheart.rain.domain.Smart.mapper;
+package cn.interheart.rain.domain.smart.mapper;
 
 import cn.interheart.rain.common.MyMapper;
 import cn.interheart.rain.domain.second.entity.Student;

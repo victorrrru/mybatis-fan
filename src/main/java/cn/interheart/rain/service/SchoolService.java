@@ -1,7 +1,7 @@
 package cn.interheart.rain.service;
 
 import cn.interheart.rain.domain.second.entity.Student;
-import cn.interheart.rain.domain.Smart.mapper.SchoolMapper;
+import cn.interheart.rain.domain.smart.mapper.SchoolMapper;
 import cn.interheart.rain.domain.second.mapper.StudentMapper;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
