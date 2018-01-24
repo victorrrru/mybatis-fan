@@ -29,7 +29,7 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
-    from student1
+    from student
     where id = #{id,jdbcType=INTEGER}
   </select>
 

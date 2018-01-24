@@ -18,6 +18,9 @@ public class FirstConfig {
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource() {
+        //spring支持的连接池HikariPool
+        //MysqlXADataSource是mysql数据源
+        //我们用的是DruidXADataSource连接池
         return DataSourceBuilder.create().build();
     }
 }
